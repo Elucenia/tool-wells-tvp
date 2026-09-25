@@ -1,0 +1,348 @@
+{
+  "tool": {
+    "id": "wells-tvp",
+    "title": "Escore de Wells para TVP",
+    "short": "Probabilidade clínica de trombose venosa profunda",
+    "desc": "Calculadora do escore de Wells para trombose venosa profunda: TVP provável ou improvável e conduta com D-dímero e ultrassom com Doppler.",
+    "lead": "Estima a probabilidade pré-teste de trombose venosa profunda de membro inferior em pacientes ambulatoriais e orienta o uso do D-dímero e do ultrassom.",
+    "spec": [
+      "angiologia",
+      "cirurgia-vascular",
+      "medicina-de-emergencia",
+      "clinica-medica",
+      "medicina-de-familia-e-comunidade"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "cancer",
+        "Câncer ativo (tratamento nos últimos 6 meses ou paliativo)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "paralisia",
+        "Paralisia, paresia ou imobilização gessada recente do membro inferior",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "acamado",
+        "Acamado ≥ 3 dias ou cirurgia de grande porte nas últimas 12 semanas",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "dor_trajeto",
+        "Dor localizada no trajeto do sistema venoso profundo",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "edema_total",
+        "Edema de todo o membro inferior",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "panturrilha",
+        "Panturrilha &gt; 3 cm maior que a contralateral (10 cm abaixo da tuberosidade tibial)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "cacifo",
+        "Edema com cacifo restrito à perna sintomática",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "colaterais",
+        "Veias superficiais colaterais (não varicosas)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "tvp_prev",
+        "TVP prévia documentada",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "alternativo",
+        "Diagnóstico alternativo tão ou mais provável que TVP",
+        "chk",
+        {
+          "pts": -2
+        }
+      ]
+    ],
+    "score": {
+      "label": "Escore de Wells (TVP)",
+      "bands": [
+        [
+          -2,
+          "low",
+          "TVP improvável; probabilidade baixa (prevalência ~5%)",
+          "Dosar D-dímero: se negativo, TVP excluída; se positivo, ultrassom com Doppler."
+        ],
+        [
+          1,
+          "mid",
+          "TVP improvável; probabilidade moderada no modelo de 3 níveis (~17%)",
+          "Dosar D-dímero: se negativo, TVP excluída; se positivo, ultrassom com Doppler."
+        ],
+        [
+          2,
+          "mid",
+          "TVP provável (≥ 2); probabilidade moderada no modelo de 3 níveis (~17%)",
+          "Ultrassom com Doppler; se negativo, D-dímero ou repetir o ultrassom em 1 semana."
+        ],
+        [
+          3,
+          "high",
+          "TVP provável; probabilidade alta (~53%)",
+          "Ultrassom com Doppler; se negativo, repetir o ultrassom ou fazer ultrassom de todo o membro."
+        ]
+      ]
+    },
+    "formula": "<p>Um ponto para cada item (câncer, paralisia/gesso, acamado ou cirurgia, dor no trajeto venoso, edema de todo o membro, panturrilha &gt; 3 cm, cacifo unilateral, colaterais, TVP prévia) e <strong>−2</strong> se um diagnóstico alternativo for tão ou mais provável.</p><p><strong>2 níveis (Wells 2003):</strong> ≥ 2 = TVP provável; ≤ 1 = improvável. <strong>3 níveis:</strong> ≤ 0 baixa; 1–2 moderada; ≥ 3 alta.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Probabilidade (3 níveis)",
+        "Prevalência de TVP",
+        "Modelo de 2 níveis"
+      ],
+      [
+        "≤ 0",
+        "Baixa",
+        "5,0%",
+        "Improvável"
+      ],
+      [
+        "1",
+        "Moderada",
+        "17%",
+        "Improvável"
+      ],
+      [
+        "2",
+        "Moderada",
+        "17%",
+        "Provável"
+      ],
+      [
+        "≥ 3",
+        "Alta",
+        "53%",
+        "Provável"
+      ]
+    ],
+    "table_note": "Prevalências da metanálise de Wells 2006 (modelo de 3 níveis). No modelo de 2 níveis (Wells 2003), TVP improvável com D-dímero negativo dispensa o ultrassom.",
+    "tips": [
+      "Não use o escore em gestantes, em pacientes internados ou com suspeita de TVP de membro superior: ele foi validado em ambulatoriais com suspeita de TVP de membro inferior.",
+      "Com TVP provável, o D-dímero isolado não exclui a doença: faça o ultrassom com Doppler.",
+      "O item \"diagnóstico alternativo\" (−2) é subjetivo: celulite, cisto de Baker roto, hematoma e lesão muscular são os mais comuns.",
+      "Em pacientes com câncer, o D-dímero é frequentemente positivo e perde utilidade: vá direto ao ultrassom."
+    ],
+    "sources": [
+      [
+        "Wells PS et al. Evaluation of D-dimer in the diagnosis of suspected deep-vein thrombosis. N Engl J Med, 2003.",
+        "https://doi.org/10.1056/NEJMoa023153"
+      ],
+      [
+        "Wells PS et al. Does this patient have deep vein thrombosis? JAMA, 2006.",
+        "https://doi.org/10.1001/jama.295.2.199"
+      ]
+    ],
+    "cases": [
+      [
+        "Nenhum item: 0 ponto, probabilidade baixa",
+        [],
+        {
+          "score": 0,
+          "level": "low"
+        }
+      ],
+      [
+        "Câncer e diagnóstico alternativo: −1",
+        {
+          "cancer": true,
+          "alternativo": true
+        },
+        {
+          "score": -1,
+          "level": "low"
+        }
+      ],
+      [
+        "Só edema com cacifo: 1 ponto, improvável",
+        {
+          "cacifo": true
+        },
+        {
+          "score": 1,
+          "level": "mid",
+          "verdict": "improvável"
+        }
+      ],
+      [
+        "Edema de todo o membro e panturrilha &gt; 3 cm: 2, provável",
+        {
+          "edema_total": true,
+          "panturrilha": true
+        },
+        {
+          "score": 2,
+          "level": "mid",
+          "verdict": "provável"
+        }
+      ],
+      [
+        "Câncer, acamado, cacifo e dor no trajeto: 4, alta",
+        {
+          "cancer": true,
+          "acamado": true,
+          "cacifo": true,
+          "dor_trajeto": true
+        },
+        {
+          "score": 4,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "torax-vascular",
+    "kind": "Escore",
+    "config": {
+      "unit": "",
+      "label": "Escore de Wells (TVP)",
+      "fields": [
+        [
+          "cancer",
+          "chk",
+          1
+        ],
+        [
+          "paralisia",
+          "chk",
+          1
+        ],
+        [
+          "acamado",
+          "chk",
+          1
+        ],
+        [
+          "dor_trajeto",
+          "chk",
+          1
+        ],
+        [
+          "edema_total",
+          "chk",
+          1
+        ],
+        [
+          "panturrilha",
+          "chk",
+          1
+        ],
+        [
+          "cacifo",
+          "chk",
+          1
+        ],
+        [
+          "colaterais",
+          "chk",
+          1
+        ],
+        [
+          "tvp_prev",
+          "chk",
+          1
+        ],
+        [
+          "alternativo",
+          "chk",
+          -2
+        ]
+      ],
+      "bands": [
+        [
+          -2,
+          "low",
+          "TVP improvável; probabilidade baixa (prevalência ~5%)",
+          "Dosar D-dímero: se negativo, TVP excluída; se positivo, ultrassom com Doppler."
+        ],
+        [
+          1,
+          "mid",
+          "TVP improvável; probabilidade moderada no modelo de 3 níveis (~17%)",
+          "Dosar D-dímero: se negativo, TVP excluída; se positivo, ultrassom com Doppler."
+        ],
+        [
+          2,
+          "mid",
+          "TVP provável (≥ 2); probabilidade moderada no modelo de 3 níveis (~17%)",
+          "Ultrassom com Doppler; se negativo, D-dímero ou repetir o ultrassom em 1 semana."
+        ],
+        [
+          3,
+          "high",
+          "TVP provável; probabilidade alta (~53%)",
+          "Ultrassom com Doppler; se negativo, repetir o ultrassom ou fazer ultrassom de todo o membro."
+        ]
+      ]
+    },
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/torax-vascular.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 5,
+      "passed": 5,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/torax-vascular.php",
+    "sha256": "e99bbd1938580ff9b46e0252fdd8cb72e87c63869f934005b8ef6d807ce8b6e2",
+    "bytes": 91275
+  },
+  "clinicalValidation": "not-performed"
+}
