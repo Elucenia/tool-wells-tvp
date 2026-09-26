@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-wells-tvp",
   "version": "0.1.0",
-  "description": "Escore de Wells para TVP · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Escore de Wells para TVP · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
