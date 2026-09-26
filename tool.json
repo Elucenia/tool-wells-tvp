@@ -231,7 +231,6 @@
         }
       ]
     ],
-    "batch": "torax-vascular",
     "kind": "Escore",
     "config": {
       "unit": "",
@@ -315,10 +314,7 @@
         ]
       ]
     },
-    "areaId": "cardiotoracica",
     "clinicalReview": "pending",
-    "sourceReview": "pending",
-    "sourceFile": "app/content/ferramentas/torax-vascular.php",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -338,11 +334,6 @@
     "status": "needs-review",
     "reason": "Revisão documental e clínica independente pendente.",
     "clinicalValidation": "not-performed"
-  },
-  "sourceFile": {
-    "path": "app/content/ferramentas/torax-vascular.php",
-    "sha256": "e99bbd1938580ff9b46e0252fdd8cb72e87c63869f934005b8ef6d807ce8b6e2",
-    "bytes": 91275
   },
   "clinicalValidation": "not-performed"
 }
