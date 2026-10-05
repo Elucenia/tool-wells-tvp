@@ -5,6 +5,7 @@
     "short": "Probabilidade clínica de trombose venosa profunda",
     "desc": "Calculadora do escore de Wells para trombose venosa profunda: TVP provável ou improvável e conduta com D-dímero e ultrassom com Doppler.",
     "lead": "Estima a probabilidade pré-teste de trombose venosa profunda de membro inferior em pacientes ambulatoriais e orienta o uso do D-dímero e do ultrassom.",
+    "kind": "Escore",
     "spec": [
       "angiologia",
       "cirurgia-vascular",
@@ -12,158 +13,69 @@
       "clinica-medica",
       "medicina-de-familia-e-comunidade"
     ],
-    "tier": 1,
     "fields": [
       [
         "cancer",
         "Câncer ativo (tratamento nos últimos 6 meses ou paliativo)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "paralisia",
         "Paralisia, paresia ou imobilização gessada recente do membro inferior",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "acamado",
-        "Acamado ≥ 3 dias ou cirurgia de grande porte nas últimas 12 semanas",
+        "Acamado ≥ 3 dias ou cirurgia de grande porte nas últimas 12 semanas com anestesia geral ou regional",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "dor_trajeto",
         "Dor localizada no trajeto do sistema venoso profundo",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "edema_total",
         "Edema de todo o membro inferior",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "panturrilha",
-        "Panturrilha &gt; 3 cm maior que a contralateral (10 cm abaixo da tuberosidade tibial)",
+        "Panturrilha ≥ 3 cm maior que a contralateral (10 cm abaixo da tuberosidade tibial)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "cacifo",
         "Edema com cacifo restrito à perna sintomática",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "colaterais",
         "Veias superficiais colaterais (não varicosas)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "tvp_prev",
         "TVP prévia documentada",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "alternativo",
         "Diagnóstico alternativo tão ou mais provável que TVP",
         "chk",
-        {
-          "pts": -2
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "Escore de Wells (TVP)",
-      "bands": [
-        [
-          -2,
-          "low",
-          "TVP improvável; probabilidade baixa (prevalência ~5%)",
-          "Dosar D-dímero: se negativo, TVP excluída; se positivo, ultrassom com Doppler."
-        ],
-        [
-          1,
-          "mid",
-          "TVP improvável; probabilidade moderada no modelo de 3 níveis (~17%)",
-          "Dosar D-dímero: se negativo, TVP excluída; se positivo, ultrassom com Doppler."
-        ],
-        [
-          2,
-          "mid",
-          "TVP provável (≥ 2); probabilidade moderada no modelo de 3 níveis (~17%)",
-          "Ultrassom com Doppler; se negativo, D-dímero ou repetir o ultrassom em 1 semana."
-        ],
-        [
-          3,
-          "high",
-          "TVP provável; probabilidade alta (~53%)",
-          "Ultrassom com Doppler; se negativo, repetir o ultrassom ou fazer ultrassom de todo o membro."
-        ]
-      ]
-    },
-    "formula": "<p>Um ponto para cada item (câncer, paralisia/gesso, acamado ou cirurgia, dor no trajeto venoso, edema de todo o membro, panturrilha &gt; 3 cm, cacifo unilateral, colaterais, TVP prévia) e <strong>−2</strong> se um diagnóstico alternativo for tão ou mais provável.</p><p><strong>2 níveis (Wells 2003):</strong> ≥ 2 = TVP provável; ≤ 1 = improvável. <strong>3 níveis:</strong> ≤ 0 baixa; 1–2 moderada; ≥ 3 alta.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Probabilidade (3 níveis)",
-        "Prevalência de TVP",
-        "Modelo de 2 níveis"
-      ],
-      [
-        "≤ 0",
-        "Baixa",
-        "5,0%",
-        "Improvável"
-      ],
-      [
-        "1",
-        "Moderada",
-        "17%",
-        "Improvável"
-      ],
-      [
-        "2",
-        "Moderada",
-        "17%",
-        "Provável"
-      ],
-      [
-        "≥ 3",
-        "Alta",
-        "53%",
-        "Provável"
-      ]
-    ],
-    "table_note": "Prevalências da metanálise de Wells 2006 (modelo de 3 níveis). No modelo de 2 níveis (Wells 2003), TVP improvável com D-dímero negativo dispensa o ultrassom.",
-    "tips": [
-      "Não use o escore em gestantes, em pacientes internados ou com suspeita de TVP de membro superior: ele foi validado em ambulatoriais com suspeita de TVP de membro inferior.",
-      "Com TVP provável, o D-dímero isolado não exclui a doença: faça o ultrassom com Doppler.",
-      "O item \"diagnóstico alternativo\" (−2) é subjetivo: celulite, cisto de Baker roto, hematoma e lesão muscular são os mais comuns.",
-      "Em pacientes com câncer, o D-dímero é frequentemente positivo e perde utilidade: vá direto ao ultrassom."
-    ],
+    "formula": "<p>Um ponto para cada item (câncer, paralisia/gesso, acamado ou cirurgia, dor no trajeto venoso, edema de todo o membro, panturrilha ≥ 3 cm, cacifo unilateral, colaterais, TVP prévia) e <strong>−2</strong> se um diagnóstico alternativo for tão ou mais provável.</p><p><strong>2 níveis (Wells 2003):</strong> ≥ 2 = TVP provável; ≤ 1 = improvável. <strong>3 níveis:</strong> ≤ 0 baixa; 1–2 moderada; ≥ 3 alta.</p>",
     "sources": [
       [
         "Wells PS et al. Evaluation of D-dimer in the diagnosis of suspected deep-vein thrombosis. N Engl J Med, 2003.",
@@ -231,90 +143,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "",
-      "label": "Escore de Wells (TVP)",
-      "fields": [
-        [
-          "cancer",
-          "chk",
-          1
-        ],
-        [
-          "paralisia",
-          "chk",
-          1
-        ],
-        [
-          "acamado",
-          "chk",
-          1
-        ],
-        [
-          "dor_trajeto",
-          "chk",
-          1
-        ],
-        [
-          "edema_total",
-          "chk",
-          1
-        ],
-        [
-          "panturrilha",
-          "chk",
-          1
-        ],
-        [
-          "cacifo",
-          "chk",
-          1
-        ],
-        [
-          "colaterais",
-          "chk",
-          1
-        ],
-        [
-          "tvp_prev",
-          "chk",
-          1
-        ],
-        [
-          "alternativo",
-          "chk",
-          -2
-        ]
-      ],
-      "bands": [
-        [
-          -2,
-          "low",
-          "TVP improvável; probabilidade baixa (prevalência ~5%)",
-          "Dosar D-dímero: se negativo, TVP excluída; se positivo, ultrassom com Doppler."
-        ],
-        [
-          1,
-          "mid",
-          "TVP improvável; probabilidade moderada no modelo de 3 níveis (~17%)",
-          "Dosar D-dímero: se negativo, TVP excluída; se positivo, ultrassom com Doppler."
-        ],
-        [
-          2,
-          "mid",
-          "TVP provável (≥ 2); probabilidade moderada no modelo de 3 níveis (~17%)",
-          "Ultrassom com Doppler; se negativo, D-dímero ou repetir o ultrassom em 1 semana."
-        ],
-        [
-          3,
-          "high",
-          "TVP provável; probabilidade alta (~53%)",
-          "Ultrassom com Doppler; se negativo, repetir o ultrassom ou fazer ultrassom de todo o membro."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -323,17 +151,695 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T19:23:48.441Z",
+      "total": 1024,
+      "passed": 1024,
+      "sourceRowCount": 1024,
+      "uniqueApiInputCount": 1024,
+      "sourceContextCount": 1024,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "94ff9d214ee1417ebb7e2bf61fa6926f0c45f73a29e1a8addae267cffccd8330",
+        "total": 1024,
+        "bankRowCount": 1024,
+        "uniqueApiInputCount": 1024,
+        "sourceContextCount": 1024,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+            "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+          },
+          {
+            "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+            "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+          "sha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5"
+        },
+        "packagingRequirement": "Compose separately owned source/rubric/edition changes and fresh build/package/browser bindings before publication."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 1024,
+        "uniqueApiInputs": 1024,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+          "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+        }
+      },
+      "scope": "selected-point arithmetic only; only exact raw.score projected, no diagnosis/risk/rubric approval.",
+      "sources": [
+        {
+          "contributedPrimaryObservations": {
+            "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+            "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+          },
+          "id": "wells-tvp",
+          "edition": "Wells2003 NEJM349:1227–1235 DOI10.1056/NEJMoa023153 Table1",
+          "urls": [
+            "https://www.researchgate.net/publication/9081747_Evaluation_of_D-Dimer_in_the_Diagnosis_of_Suspected_Deep-Vein_Thrombosis",
+            "https://doi.org/10.1056/NEJMoa023153"
+          ],
+          "files": [],
+          "access": "Author-uploaded original article indexed text: Table1 and participant/interventions paragraphs directly read. Publisher PDF403. No visual inspection of Table1 claimed.",
+          "population": "Consecutive adult outpatients with suspected lower-extremity DVT; excludes suspected PE,pregnancy,<18,therapeutic anticoagulation>48h,life expectancy<3months,inaccessible follow-up,resolved symptoms>72h and study contrast/consent conditions.",
+          "rules": {
+            "ninePositiveFactorsEach": 1,
+            "alternativeAtLeastAsLikely": -2
+          },
+          "findings": [
+            {
+              "area": "calf swelling",
+              "status": "confirmed source-label discrepancy",
+              "source": "Original Table1 requires AT LEAST3cm larger, measured10cm below tibial tuberosity.",
+              "current": "Current field/formula says>3cm; exactly3cm is omitted."
+            },
+            {
+              "area": "bedrest/surgery",
+              "status": "source qualification omitted",
+              "source": "Table1 major surgery within12weeks requiring general or regional anesthesia.",
+              "current": "Current field omits anesthesia qualification."
+            },
+            {
+              "area": "three-level category attribution",
+              "status": "separate version needed",
+              "source": "2003Table1 defines two categories≥2likely/<2unlikely; it does not supply current three-level partition.",
+              "current": "Point total only tested; three-level version not certified as2003."
+            }
+          ],
+          "notVerified": [
+            "Original table visual image, current3-level classification edition, diagnostic decision/rubric performance, subjective alternative diagnosis and rights."
+          ],
+          "currentMethodVersion": "Wells DVT 2003:9 fatores+alternativa−2; classificação 2 níveis≥2,3 níveis 0/1–2/≥3",
+          "currentToolSha256": "037d12ea4b6624a2998951479079312002708550afc6f5e15e2cb66e8d26afbd"
+        }
+      ],
+      "evidencePath": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+      "evidenceSha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5",
+      "independentPeer": {
+        "status": "passed-scoped-numeric",
+        "evidence": {
+          "file": "reports/review-20261003/eight-diagnostic-numeric-independent-peer-verify-final27.json",
+          "sha256": "e7bddba5c7de286f91fa8c431512f512849302646394d88663afe8142e079a7d"
+        },
+        "scope": "Independent primary table/abstract reading, own selected-point expectations persisted before engines, exact numeric three-adapter Node/isolated Chromium. Clinical/risk/rubric/full-method conformance excluded; McIsaac final-clamp findings retained and excluded from this six-method projection."
+      },
+      "freshAdapterExecutions": 3072,
+      "freshVmExecutions": 3072,
+      "actualBrowserEvidenceScope": "Old actual Chromium receipt uses only website adapter; three adapters have independently completed Node/VM and new Verify Chromium peer. This bank explicitly names original website-only browser observations; no reassignment to other mirrors.",
+      "implementations": [
+        {
+          "id": "wells-tvp",
+          "app": "website",
+          "file": "apps/website/private/tool-code/wells-tvp/calculator.js",
+          "sha256": "d589f1ab81744fdb4fcff72008134f72e9601f2b955f50465dddfb4cdf509a96"
+        },
+        {
+          "id": "wells-tvp",
+          "app": "dashboard",
+          "file": "apps/dashboard/private/tool-code/wells-tvp/calculator.js",
+          "sha256": "d589f1ab81744fdb4fcff72008134f72e9601f2b955f50465dddfb4cdf509a96"
+        },
+        {
+          "id": "wells-tvp",
+          "app": "command-center",
+          "file": "apps/command-center/private/tool-code/wells-tvp/calculator.js",
+          "sha256": "d589f1ab81744fdb4fcff72008134f72e9601f2b955f50465dddfb4cdf509a96"
+        }
+      ],
+      "qualifications": [
+        "Original table visual image, current3-level classification edition, diagnostic decision/rubric performance, subjective alternative diagnosis and rights.",
+        "Primary-source reading and access are recorded by the contributing source reviewer and independent numeric peer; this integration does not claim another full source reading.",
+        "Only raw.score selected-point arithmetic is included. Clinical categories, main text, private level/verdict/note/rows, prognosis, diagnosis, management and unmeasured feature classification are excluded.",
+        "All source scenarios in this bank and the original donor reports remain retained. Mirror/runtime calculations do not multiply scenario counts. Inline four examples are a subset of the complete downloadable bank.",
+        "Source fields, rubric/edition labels, clinical scope notes and localization changes have separate ownership and must be composed without replacing whole catalogs. All862 historic fixtures/tolerances and approval flags remain unchanged.",
+        "Fresh source/build/packages and browser journey bindings are required before publication. No already-served website or final package proof is claimed by this preparation."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "metadataPackagingPeer": {
+        "status": "passed",
+        "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+        "peer": {
+          "file": "reports/review-20261003/six-diagnostic-bank-metadata-independent-review-western-final27.json",
+          "sha256": "8f308a904c18e2d57f6d6b37c660021e399df5bd766589b89c9c03f2fa7d141c"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "prospectiveSource27Bindings": [
+        {
+          "file": "apps/website/private/tool-code/wells-tvp/calculator.js",
+          "sha256": "53c4ddbb0d9fbf0ca88cfa58872c07a5a06d35fd3d73d08c4910228a7bea82b4"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/wells-tvp/calculator.js",
+          "sha256": "53c4ddbb0d9fbf0ca88cfa58872c07a5a06d35fd3d73d08c4910228a7bea82b4"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/wells-tvp/calculator.js",
+          "sha256": "53c4ddbb0d9fbf0ca88cfa58872c07a5a06d35fd3d73d08c4910228a7bea82b4"
+        }
+      ],
+      "prospectiveSource27Replay": {
+        "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+        "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Wells DVT 2003, Tabela 1: 9 fatores + alternativa −2; 2 níveis ≥2 / <2; modelo de 3 níveis exibido separadamente, edição ainda não conferida",
+    "implementationVersion": "wells-tvp@native-2026-10-04+53c4ddbb0d9f",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/14507948/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Um ponto para cada item (câncer, paralisia/gesso, acamado ou cirurgia, dor no trajeto venoso, edema de todo o membro, panturrilha ≥ 3 cm, cacifo unilateral, colaterais, TVP prévia) e −2 se um diagnóstico alternativo for tão ou mais provável. 2 níveis (Wells 2003): ≥ 2 = TVP provável; ≤ 1 = improvável. 3 níveis: ≤ 0 baixa; 1–2 moderada; ≥ 3 alta.",
+      "inputContract": {
+        "fields": [
+          [
+            "cancer",
+            "Câncer ativo (tratamento nos últimos 6 meses ou paliativo)",
+            "chk",
+            {}
+          ],
+          [
+            "paralisia",
+            "Paralisia, paresia ou imobilização gessada recente do membro inferior",
+            "chk",
+            {}
+          ],
+          [
+            "acamado",
+            "Acamado ≥ 3 dias ou cirurgia de grande porte nas últimas 12 semanas com anestesia geral ou regional",
+            "chk",
+            {}
+          ],
+          [
+            "dor_trajeto",
+            "Dor localizada no trajeto do sistema venoso profundo",
+            "chk",
+            {}
+          ],
+          [
+            "edema_total",
+            "Edema de todo o membro inferior",
+            "chk",
+            {}
+          ],
+          [
+            "panturrilha",
+            "Panturrilha ≥ 3 cm maior que a contralateral (10 cm abaixo da tuberosidade tibial)",
+            "chk",
+            {}
+          ],
+          [
+            "cacifo",
+            "Edema com cacifo restrito à perna sintomática",
+            "chk",
+            {}
+          ],
+          [
+            "colaterais",
+            "Veias superficiais colaterais (não varicosas)",
+            "chk",
+            {}
+          ],
+          [
+            "tvp_prev",
+            "TVP prévia documentada",
+            "chk",
+            {}
+          ],
+          [
+            "alternativo",
+            "Diagnóstico alternativo tão ou mais provável que TVP",
+            "chk",
+            {}
+          ]
+        ],
+        "hash": "0078743c76235ddbb633cf61412b340a69a516350e7779bb9984db5af5a0abf9"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Wells PS et al. Evaluation of D-dimer in the diagnosis of suspected deep-vein thrombosis. N Engl J Med, 2003.",
+          "url": "https://doi.org/10.1056/NEJMoa023153",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Evaluation of D-dimer in the diagnosis of suspected deep-vein thrombosis.",
+            "year": "2003",
+            "firstPublicationDate": "2003-09-01",
+            "doi": "10.1056/nejmoa023153",
+            "pmid": "14507948",
+            "journal": "The New England journal of medicine",
+            "authors": "Wells PS, Anderson DR, Rodger M, Forgie M, Kearon C, Dreyer J, Kovacs G, Mitchell M, Lewandowski B, Kovacs MJ."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/14507948/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "a21159ee34079b7fa3ee48fb7d337857af409328592bfe347db6cdc41e7c6e3f",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Wells PS et al. Does this patient have deep vein thrombosis? JAMA, 2006.",
+          "url": "https://doi.org/10.1001/jama.295.2.199",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Does this patient have deep vein thrombosis?",
+            "year": "2006",
+            "firstPublicationDate": "2006-01-01",
+            "doi": "10.1001/jama.295.2.199",
+            "pmid": "16403932",
+            "journal": "JAMA",
+            "authors": "Wells PS, Owen C, Doucette S, Fergusson D, Tran H."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/16403932/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "0ed0826b846f897c1b53177991fad00e6118374392336bc4d712cfec3dbbdb6b",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T19:23:48.441Z",
+        "total": 1024,
+        "passed": 1024,
+        "sourceRowCount": 1024,
+        "uniqueApiInputCount": 1024,
+        "sourceContextCount": 1024,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "94ff9d214ee1417ebb7e2bf61fa6926f0c45f73a29e1a8addae267cffccd8330",
+          "total": 1024,
+          "bankRowCount": 1024,
+          "uniqueApiInputCount": 1024,
+          "sourceContextCount": 1024,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+              "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+            },
+            {
+              "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+              "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+            "sha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5"
+          },
+          "packagingRequirement": "Compose separately owned source/rubric/edition changes and fresh build/package/browser bindings before publication."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 1024,
+          "uniqueApiInputs": 1024,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+            "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+          }
+        },
+        "scope": "selected-point arithmetic only; only exact raw.score projected, no diagnosis/risk/rubric approval.",
+        "sources": [
+          {
+            "contributedPrimaryObservations": {
+              "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+              "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+            },
+            "id": "wells-tvp",
+            "edition": "Wells2003 NEJM349:1227–1235 DOI10.1056/NEJMoa023153 Table1",
+            "urls": [
+              "https://www.researchgate.net/publication/9081747_Evaluation_of_D-Dimer_in_the_Diagnosis_of_Suspected_Deep-Vein_Thrombosis",
+              "https://doi.org/10.1056/NEJMoa023153"
+            ],
+            "files": [],
+            "access": "Author-uploaded original article indexed text: Table1 and participant/interventions paragraphs directly read. Publisher PDF403. No visual inspection of Table1 claimed.",
+            "population": "Consecutive adult outpatients with suspected lower-extremity DVT; excludes suspected PE,pregnancy,<18,therapeutic anticoagulation>48h,life expectancy<3months,inaccessible follow-up,resolved symptoms>72h and study contrast/consent conditions.",
+            "rules": {
+              "ninePositiveFactorsEach": 1,
+              "alternativeAtLeastAsLikely": -2
+            },
+            "findings": [
+              {
+                "area": "calf swelling",
+                "status": "confirmed source-label discrepancy",
+                "source": "Original Table1 requires AT LEAST3cm larger, measured10cm below tibial tuberosity.",
+                "current": "Current field/formula says>3cm; exactly3cm is omitted."
+              },
+              {
+                "area": "bedrest/surgery",
+                "status": "source qualification omitted",
+                "source": "Table1 major surgery within12weeks requiring general or regional anesthesia.",
+                "current": "Current field omits anesthesia qualification."
+              },
+              {
+                "area": "three-level category attribution",
+                "status": "separate version needed",
+                "source": "2003Table1 defines two categories≥2likely/<2unlikely; it does not supply current three-level partition.",
+                "current": "Point total only tested; three-level version not certified as2003."
+              }
+            ],
+            "notVerified": [
+              "Original table visual image, current3-level classification edition, diagnostic decision/rubric performance, subjective alternative diagnosis and rights."
+            ],
+            "currentMethodVersion": "Wells DVT 2003:9 fatores+alternativa−2; classificação 2 níveis≥2,3 níveis 0/1–2/≥3",
+            "currentToolSha256": "037d12ea4b6624a2998951479079312002708550afc6f5e15e2cb66e8d26afbd"
+          }
+        ],
+        "evidencePath": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+        "evidenceSha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5",
+        "independentPeer": {
+          "status": "passed-scoped-numeric",
+          "evidence": {
+            "file": "reports/review-20261003/eight-diagnostic-numeric-independent-peer-verify-final27.json",
+            "sha256": "e7bddba5c7de286f91fa8c431512f512849302646394d88663afe8142e079a7d"
+          },
+          "scope": "Independent primary table/abstract reading, own selected-point expectations persisted before engines, exact numeric three-adapter Node/isolated Chromium. Clinical/risk/rubric/full-method conformance excluded; McIsaac final-clamp findings retained and excluded from this six-method projection."
+        },
+        "freshAdapterExecutions": 3072,
+        "freshVmExecutions": 3072,
+        "actualBrowserEvidenceScope": "Old actual Chromium receipt uses only website adapter; three adapters have independently completed Node/VM and new Verify Chromium peer. This bank explicitly names original website-only browser observations; no reassignment to other mirrors.",
+        "implementations": [
+          {
+            "id": "wells-tvp",
+            "app": "website",
+            "file": "apps/website/private/tool-code/wells-tvp/calculator.js",
+            "sha256": "d589f1ab81744fdb4fcff72008134f72e9601f2b955f50465dddfb4cdf509a96"
+          },
+          {
+            "id": "wells-tvp",
+            "app": "dashboard",
+            "file": "apps/dashboard/private/tool-code/wells-tvp/calculator.js",
+            "sha256": "d589f1ab81744fdb4fcff72008134f72e9601f2b955f50465dddfb4cdf509a96"
+          },
+          {
+            "id": "wells-tvp",
+            "app": "command-center",
+            "file": "apps/command-center/private/tool-code/wells-tvp/calculator.js",
+            "sha256": "d589f1ab81744fdb4fcff72008134f72e9601f2b955f50465dddfb4cdf509a96"
+          }
+        ],
+        "qualifications": [
+          "Original table visual image, current3-level classification edition, diagnostic decision/rubric performance, subjective alternative diagnosis and rights.",
+          "Primary-source reading and access are recorded by the contributing source reviewer and independent numeric peer; this integration does not claim another full source reading.",
+          "Only raw.score selected-point arithmetic is included. Clinical categories, main text, private level/verdict/note/rows, prognosis, diagnosis, management and unmeasured feature classification are excluded.",
+          "All source scenarios in this bank and the original donor reports remain retained. Mirror/runtime calculations do not multiply scenario counts. Inline four examples are a subset of the complete downloadable bank.",
+          "Source fields, rubric/edition labels, clinical scope notes and localization changes have separate ownership and must be composed without replacing whole catalogs. All862 historic fixtures/tolerances and approval flags remain unchanged.",
+          "Fresh source/build/packages and browser journey bindings are required before publication. No already-served website or final package proof is claimed by this preparation."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "metadataPackagingPeer": {
+          "status": "passed",
+          "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+          "peer": {
+            "file": "reports/review-20261003/six-diagnostic-bank-metadata-independent-review-western-final27.json",
+            "sha256": "8f308a904c18e2d57f6d6b37c660021e399df5bd766589b89c9c03f2fa7d141c"
+          },
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "prospectiveSource27Bindings": [
+          {
+            "file": "apps/website/private/tool-code/wells-tvp/calculator.js",
+            "sha256": "53c4ddbb0d9fbf0ca88cfa58872c07a5a06d35fd3d73d08c4910228a7bea82b4"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/wells-tvp/calculator.js",
+            "sha256": "53c4ddbb0d9fbf0ca88cfa58872c07a5a06d35fd3d73d08c4910228a7bea82b4"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/wells-tvp/calculator.js",
+            "sha256": "53c4ddbb0d9fbf0ca88cfa58872c07a5a06d35fd3d73d08c4910228a7bea82b4"
+          }
+        ],
+        "prospectiveSource27Replay": {
+          "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+          "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "53c4ddbb0d9fbf0ca88cfa58872c07a5a06d35fd3d73d08c4910228a7bea82b4",
+      "diagnosticRubricSourceAmendment": {
+        "at": "2026-10-04T18:59:19.497Z",
+        "scope": "Source-documentation and selected label-only amendment; no engine or integer point code change. Private TOOL labels retain their prior source hash and are explicitly outside this candidate.",
+        "proposal": {
+          "file": "eight-diagnostic-source-rubric-proposal-final27-r4.json",
+          "sha256": "d31091eebbc461e5ceffa09c589d05aa2ef3056f08382eadcaceeb8e6b038355"
+        },
+        "authoredSource": {
+          "file": "eight-diagnostic-source-rubric-authored-final27-v3.cjs",
+          "sha256": "ee9d439300f946173be86160cc909fbef0a09de6ca5ca54fb9ef674a32887972"
+        },
+        "sourceReview": {
+          "file": "eight-diagnostic-primary-source-review-final26.json",
+          "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+        },
+        "previousMethodVersion": "Wells DVT 2003:9 fatores+alternativa−2; classificação 2 níveis≥2,3 níveis 0/1–2/≥3",
+        "previousFormulaSha256": "b782bd05cd42dbe21bd45ea09d485c41b9b7cb8b076edd8bd08695c3e67dced2",
+        "previousFieldsSha256": "576d010d98666f6cb52578fda6ce239871b7435c2c6d09fd3b1ce4d1881a1976",
+        "previousLimitsSha256": "0872a1514185774f8cff5479bad17d6e97a3d765087d4b63235e5454cbf51d15",
+        "previousInputContract": {
+          "fields": [
+            {
+              "key": "cancer",
+              "label": "Câncer ativo (tratamento nos últimos 6 meses ou paliativo)",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "paralisia",
+              "label": "Paralisia, paresia ou imobilização gessada recente do membro inferior",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "acamado",
+              "label": "Acamado ≥ 3 dias ou cirurgia de grande porte nas últimas 12 semanas",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "dor_trajeto",
+              "label": "Dor localizada no trajeto do sistema venoso profundo",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "edema_total",
+              "label": "Edema de todo o membro inferior",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "panturrilha",
+              "label": "Panturrilha &gt; 3 cm maior que a contralateral (10 cm abaixo da tuberosidade tibial)",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "cacifo",
+              "label": "Edema com cacifo restrito à perna sintomática",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "colaterais",
+              "label": "Veias superficiais colaterais (não varicosas)",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "tvp_prev",
+              "label": "TVP prévia documentada",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            },
+            {
+              "key": "alternativo",
+              "label": "Diagnóstico alternativo tão ou mais provável que TVP",
+              "type": "chk",
+              "optional": false,
+              "options": null
+            }
+          ],
+          "hash": "6ba92b1289c9f6f806e214e18ba1802d585bdd4ca7c1a7aa11ce327548c63b7b"
+        },
+        "previousImplementedVariant": "Um ponto para cada item (câncer, paralisia/gesso, acamado ou cirurgia, dor no trajeto venoso, edema de todo o membro, panturrilha > 3 cm, cacifo unilateral, colaterais, TVP prévia) e −2 se um diagnóstico alternativo for tão ou mais provável. 2 níveis (Wells 2003): ≥ 2 = TVP provável; ≤ 1 = improvável. 3 níveis: ≤ 0 baixa; 1–2 moderada; ≥ 3 alta.",
+        "implementationHashUnchanged": "d589f1ab81744fdb4fcff72008134f72e9601f2b955f50465dddfb4cdf509a96",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "releaseApproval": "not-performed",
+        "fullMethodConformance": false
+      },
+      "previousImplementationHash": "d589f1ab81744fdb4fcff72008134f72e9601f2b955f50465dddfb4cdf509a96",
+      "previousInputContract": {
+        "fields": [
+          {
+            "key": "cancer",
+            "label": "Câncer ativo (tratamento nos últimos 6 meses ou paliativo)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "paralisia",
+            "label": "Paralisia, paresia ou imobilização gessada recente do membro inferior",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "acamado",
+            "label": "Acamado ≥ 3 dias ou cirurgia de grande porte nas últimas 12 semanas com anestesia geral ou regional",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "dor_trajeto",
+            "label": "Dor localizada no trajeto do sistema venoso profundo",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "edema_total",
+            "label": "Edema de todo o membro inferior",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "panturrilha",
+            "label": "Panturrilha ≥ 3 cm maior que a contralateral (10 cm abaixo da tuberosidade tibial)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cacifo",
+            "label": "Edema com cacifo restrito à perna sintomática",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "colaterais",
+            "label": "Veias superficiais colaterais (não varicosas)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tvp_prev",
+            "label": "TVP prévia documentada",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "alternativo",
+            "label": "Diagnóstico alternativo tão ou mais provável que TVP",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "68fa11e6741ba1f230a9e2a94395913ef4f23d76d8e0cae9165247910b879fdb"
+      }
+    },
+    "limits": "A estratégia Wells 2003 foi estudada em pacientes ambulatoriais com suspeita de TVP de membro inferior. A decisão protocolar de dispensar ultrassom exigia probabilidade clínica improvável e D-dímero negativo juntos. O escore isolado não confirma nem exclui TVP, e o ensaio de D-dímero e os critérios de elegibilidade devem corresponder ao protocolo utilizado. Na Tabela 1 de Wells 2003, a diferença da panturrilha é de pelo menos 3 cm, medida 10 cm abaixo da tuberosidade tibial; cirurgia de grande porte nas últimas 12 semanas exige anestesia geral ou regional. A tabela define somente o modelo de 2 níveis (≥2 provável; <2 improvável); a edição do modelo de 3 níveis exibido aqui permanece sem conferência.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.923Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não mostra todos os itens, exclusões e ensaios de D-dímero; classificações de dois/três níveis não são resultados de presença/ausência confirmada."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "diagnosticRubricSourceAmendment": {
+        "at": "2026-10-04T18:59:19.497Z",
+        "sourceReview": {
+          "file": "eight-diagnostic-primary-source-review-final26.json",
+          "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+        },
+        "noteSourceSha256": "2bcc11b627a7a1f87a1a5df7d8cb9ad6366bed3fad14aaf13358556756135f7a",
+        "previousLimitsSha256": "0872a1514185774f8cff5479bad17d6e97a3d765087d4b63235e5454cbf51d15",
+        "previousEvidencePreserved": true,
+        "scope": "Named additional source sections and explicit remaining source/categorical limitations only; no full method/clinical approval.",
+        "unresolved": [
+          "2003Table1 supports only the2-level model; source edition of the displayed3-level model remains unchecked."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "rightsApproval": "not-performed"
+      }
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/wells-tvp/calculator.js",
+    "bytes": 5867,
+    "sha256": "53c4ddbb0d9fbf0ca88cfa58872c07a5a06d35fd3d73d08c4910228a7bea82b4"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "5be2f6b34675ec4969453de172d9c62621db944697aa27489805a84d0738fdf1",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "f793b1e02d9cf8c0b4beaed5134e930546b58ef625bde75b5c37896f2e6625d0",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "f793b1e02d9cf8c0b4beaed5134e930546b58ef625bde75b5c37896f2e6625d0",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

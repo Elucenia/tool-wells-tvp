@@ -1,0 +1,238 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean cancer",
+    "input": {
+      "cancer": "2",
+      "paralisia": false,
+      "acamado": false,
+      "dor_trajeto": false,
+      "edema_total": false,
+      "panturrilha": false,
+      "cacifo": false,
+      "colaterais": false,
+      "tvp_prev": false,
+      "alternativo": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cancer"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean paralisia",
+    "input": {
+      "cancer": false,
+      "paralisia": "2",
+      "acamado": false,
+      "dor_trajeto": false,
+      "edema_total": false,
+      "panturrilha": false,
+      "cacifo": false,
+      "colaterais": false,
+      "tvp_prev": false,
+      "alternativo": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "paralisia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean acamado",
+    "input": {
+      "cancer": false,
+      "paralisia": false,
+      "acamado": "2",
+      "dor_trajeto": false,
+      "edema_total": false,
+      "panturrilha": false,
+      "cacifo": false,
+      "colaterais": false,
+      "tvp_prev": false,
+      "alternativo": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "acamado"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean dor_trajeto",
+    "input": {
+      "cancer": false,
+      "paralisia": false,
+      "acamado": false,
+      "dor_trajeto": "2",
+      "edema_total": false,
+      "panturrilha": false,
+      "cacifo": false,
+      "colaterais": false,
+      "tvp_prev": false,
+      "alternativo": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dor_trajeto"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean edema_total",
+    "input": {
+      "cancer": false,
+      "paralisia": false,
+      "acamado": false,
+      "dor_trajeto": false,
+      "edema_total": "2",
+      "panturrilha": false,
+      "cacifo": false,
+      "colaterais": false,
+      "tvp_prev": false,
+      "alternativo": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "edema_total"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean panturrilha",
+    "input": {
+      "cancer": false,
+      "paralisia": false,
+      "acamado": false,
+      "dor_trajeto": false,
+      "edema_total": false,
+      "panturrilha": "2",
+      "cacifo": false,
+      "colaterais": false,
+      "tvp_prev": false,
+      "alternativo": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "panturrilha"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean cacifo",
+    "input": {
+      "cancer": false,
+      "paralisia": false,
+      "acamado": false,
+      "dor_trajeto": false,
+      "edema_total": false,
+      "panturrilha": false,
+      "cacifo": "2",
+      "colaterais": false,
+      "tvp_prev": false,
+      "alternativo": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cacifo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean colaterais",
+    "input": {
+      "cancer": false,
+      "paralisia": false,
+      "acamado": false,
+      "dor_trajeto": false,
+      "edema_total": false,
+      "panturrilha": false,
+      "cacifo": false,
+      "colaterais": "2",
+      "tvp_prev": false,
+      "alternativo": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "colaterais"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean tvp_prev",
+    "input": {
+      "cancer": false,
+      "paralisia": false,
+      "acamado": false,
+      "dor_trajeto": false,
+      "edema_total": false,
+      "panturrilha": false,
+      "cacifo": false,
+      "colaterais": false,
+      "tvp_prev": "2",
+      "alternativo": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tvp_prev"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean alternativo",
+    "input": {
+      "cancer": false,
+      "paralisia": false,
+      "acamado": false,
+      "dor_trajeto": false,
+      "edema_total": false,
+      "panturrilha": false,
+      "cacifo": false,
+      "colaterais": false,
+      "tvp_prev": false,
+      "alternativo": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "alternativo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
