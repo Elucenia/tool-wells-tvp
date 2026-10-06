@@ -95,3 +95,42 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+TVP improbable ; probabilité faible (prévalence ~5%)
+
+Doser le D-dimère : s’il est négatif, TVP exclue ; s’il est positif, échographie Doppler.
+
+
+### 2
+
+TVP improbable ; probabilité faible (prévalence ~5%)
+
+Doser le D-dimère : s’il est négatif, TVP exclue ; s’il est positif, échographie Doppler.
+
+
+### 3
+
+TVP peu probable ; probabilité modérée dans le modèle à 3 niveaux (~17%)
+
+Doser le D-dimère : s’il est négatif, TVP exclue ; s’il est positif, échographie Doppler.
+
+
+### 4
+
+TVP probable (≥ 2) ; probabilité modérée dans le modèle à 3 niveaux (~17%)
+
+Échographie Doppler ; si elle est négative, D-dimère ou répéter l’échographie dans 1 semaine.
+
+
+### 5
+
+TVP probable ; probabilité élevée (~53%)
+
+Échographie Doppler ; si elle est négative, répéter l’échographie ou réaliser une échographie de tout le membre.
+

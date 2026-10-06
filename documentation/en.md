@@ -95,3 +95,42 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+DVT unlikely; low probability (prevalence ~5%)
+
+Measure D-dimer: if negative, DVT excluded; if positive, Doppler ultrasound.
+
+
+### 2
+
+DVT unlikely; low probability (prevalence ~5%)
+
+Measure D-dimer: if negative, DVT excluded; if positive, Doppler ultrasound.
+
+
+### 3
+
+DVT unlikely; moderate probability in the 3-level model (~17%)
+
+Measure D-dimer: if negative, DVT excluded; if positive, Doppler ultrasound.
+
+
+### 4
+
+DVT likely (≥ 2); moderate probability in the 3-level model (~17%)
+
+Doppler ultrasound; if negative, D-dimer or repeat the ultrasound in 1 week.
+
+
+### 5
+
+DVT likely; high probability (~53%)
+
+Doppler ultrasound; if negative, repeat the ultrasound or perform ultrasound of the entire limb.
+

@@ -1,0 +1,877 @@
+{
+  "id": "wells-tvp",
+  "implementationVersion": "wells-tvp@native-2026-10-05+cf7e70071755",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Nenhum item: 0 ponto, probabilidade baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP improvável; probabilidade baixa (prevalência ~5%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Dosar D-dímero: se negativo, TVP excluída; se positivo, ultrassom com Doppler.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer e diagnóstico alternativo: −1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP improvável; probabilidade baixa (prevalência ~5%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Dosar D-dímero: se negativo, TVP excluída; se positivo, ultrassom com Doppler.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só edema com cacifo: 1 ponto, improvável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP improvável; probabilidade moderada no modelo de 3 níveis (~17%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Dosar D-dímero: se negativo, TVP excluída; se positivo, ultrassom com Doppler.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema de todo o membro e panturrilha &gt; 3 cm: 2, provável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP provável (≥ 2); probabilidade moderada no modelo de 3 níveis (~17%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Ultrassom com Doppler; se negativo, D-dímero ou repetir o ultrassom em 1 semana.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer, acamado, cacifo e dor no trajeto: 4, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP provável; probabilidade alta (~53%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Ultrassom com Doppler; se negativo, repetir o ultrassom ou fazer ultrassom de todo o membro.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Nenhum item: 0 ponto, probabilidade baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVT unlikely; low probability (prevalence ~5%)",
+            "locale": "en",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "Measure D-dimer: if negative, DVT excluded; if positive, Doppler ultrasound.",
+            "locale": "en",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer e diagnóstico alternativo: −1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVT unlikely; low probability (prevalence ~5%)",
+            "locale": "en",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "Measure D-dimer: if negative, DVT excluded; if positive, Doppler ultrasound.",
+            "locale": "en",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só edema com cacifo: 1 ponto, improvável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVT unlikely; moderate probability in the 3-level model (~17%)",
+            "locale": "en",
+            "template": "documented-authored-5620c44c652484e8c249"
+          },
+          "note": {
+            "text": "Measure D-dimer: if negative, DVT excluded; if positive, Doppler ultrasound.",
+            "locale": "en",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema de todo o membro e panturrilha &gt; 3 cm: 2, provável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVT likely (≥ 2); moderate probability in the 3-level model (~17%)",
+            "locale": "en",
+            "template": "documented-authored-e3bc38029a55899cec47"
+          },
+          "note": {
+            "text": "Doppler ultrasound; if negative, D-dimer or repeat the ultrasound in 1 week.",
+            "locale": "en",
+            "template": "documented-authored-b802e79e2b564b8d3668"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer, acamado, cacifo e dor no trajeto: 4, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVT likely; high probability (~53%)",
+            "locale": "en",
+            "template": "documented-authored-c773a4ed386a81445a82"
+          },
+          "note": {
+            "text": "Doppler ultrasound; if negative, repeat the ultrasound or perform ultrasound of the entire limb.",
+            "locale": "en",
+            "template": "documented-authored-7ee5ab426e679531e3a2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Nenhum item: 0 ponto, probabilidade baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP improbable; probabilidad baja (prevalencia ~5%)",
+            "locale": "es",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "Dosar D-dímero: si es negativo, TVP excluida; si es positivo, ultrasonido con Doppler.",
+            "locale": "es",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer e diagnóstico alternativo: −1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP improbable; probabilidad baja (prevalencia ~5%)",
+            "locale": "es",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "Dosar D-dímero: si es negativo, TVP excluida; si es positivo, ultrasonido con Doppler.",
+            "locale": "es",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só edema com cacifo: 1 ponto, improvável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP poco probable; probabilidad moderada en el modelo de 3 niveles (~17%)",
+            "locale": "es",
+            "template": "documented-authored-5620c44c652484e8c249"
+          },
+          "note": {
+            "text": "Dosar D-dímero: si es negativo, TVP excluida; si es positivo, ultrasonido con Doppler.",
+            "locale": "es",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema de todo o membro e panturrilha &gt; 3 cm: 2, provável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP probable (≥ 2); probabilidad moderada en el modelo de 3 niveles (~17%)",
+            "locale": "es",
+            "template": "documented-authored-e3bc38029a55899cec47"
+          },
+          "note": {
+            "text": "Ecografía Doppler; si es negativa, dímero D o repetir la ecografía en 1 semana.",
+            "locale": "es",
+            "template": "documented-authored-b802e79e2b564b8d3668"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer, acamado, cacifo e dor no trajeto: 4, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP probable; probabilidad alta (~53%)",
+            "locale": "es",
+            "template": "documented-authored-c773a4ed386a81445a82"
+          },
+          "note": {
+            "text": "Ecografía Doppler; si es negativa, repetir la ecografía o hacer una ecografía de todo el miembro.",
+            "locale": "es",
+            "template": "documented-authored-7ee5ab426e679531e3a2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Nenhum item: 0 ponto, probabilidade baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP improbable ; probabilité faible (prévalence ~5%)",
+            "locale": "fr",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "Doser le D-dimère : s’il est négatif, TVP exclue ; s’il est positif, échographie Doppler.",
+            "locale": "fr",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer e diagnóstico alternativo: −1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP improbable ; probabilité faible (prévalence ~5%)",
+            "locale": "fr",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "Doser le D-dimère : s’il est négatif, TVP exclue ; s’il est positif, échographie Doppler.",
+            "locale": "fr",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só edema com cacifo: 1 ponto, improvável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP peu probable ; probabilité modérée dans le modèle à 3 niveaux (~17%)",
+            "locale": "fr",
+            "template": "documented-authored-5620c44c652484e8c249"
+          },
+          "note": {
+            "text": "Doser le D-dimère : s’il est négatif, TVP exclue ; s’il est positif, échographie Doppler.",
+            "locale": "fr",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema de todo o membro e panturrilha &gt; 3 cm: 2, provável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP probable (≥ 2) ; probabilité modérée dans le modèle à 3 niveaux (~17%)",
+            "locale": "fr",
+            "template": "documented-authored-e3bc38029a55899cec47"
+          },
+          "note": {
+            "text": "Échographie Doppler ; si elle est négative, D-dimère ou répéter l’échographie dans 1 semaine.",
+            "locale": "fr",
+            "template": "documented-authored-b802e79e2b564b8d3668"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer, acamado, cacifo e dor no trajeto: 4, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP probable ; probabilité élevée (~53%)",
+            "locale": "fr",
+            "template": "documented-authored-c773a4ed386a81445a82"
+          },
+          "note": {
+            "text": "Échographie Doppler ; si elle est négative, répéter l’échographie ou réaliser une échographie de tout le membre.",
+            "locale": "fr",
+            "template": "documented-authored-7ee5ab426e679531e3a2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Nenhum item: 0 ponto, probabilidade baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVT unwahrscheinlich; niedrige Wahrscheinlichkeit (Prävalenz ~5%)",
+            "locale": "de",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "D-Dimer bestimmen: bei negativem Ergebnis TVT ausgeschlossen; bei positivem Ergebnis Doppler-Ultraschall.",
+            "locale": "de",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer e diagnóstico alternativo: −1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVT unwahrscheinlich; niedrige Wahrscheinlichkeit (Prävalenz ~5%)",
+            "locale": "de",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "D-Dimer bestimmen: bei negativem Ergebnis TVT ausgeschlossen; bei positivem Ergebnis Doppler-Ultraschall.",
+            "locale": "de",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só edema com cacifo: 1 ponto, improvável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVT unwahrscheinlich; moderate Wahrscheinlichkeit im 3-Stufen-Modell (~17%)",
+            "locale": "de",
+            "template": "documented-authored-5620c44c652484e8c249"
+          },
+          "note": {
+            "text": "D-Dimer bestimmen: bei negativem Ergebnis TVT ausgeschlossen; bei positivem Ergebnis Doppler-Ultraschall.",
+            "locale": "de",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema de todo o membro e panturrilha &gt; 3 cm: 2, provável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVT wahrscheinlich (≥ 2); moderate Wahrscheinlichkeit im 3-Stufen-Modell (~17%)",
+            "locale": "de",
+            "template": "documented-authored-e3bc38029a55899cec47"
+          },
+          "note": {
+            "text": "Doppler-Ultraschall; bei negativem Befund D-Dimer oder den Ultraschall in 1 Woche wiederholen.",
+            "locale": "de",
+            "template": "documented-authored-b802e79e2b564b8d3668"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer, acamado, cacifo e dor no trajeto: 4, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVT wahrscheinlich; hohe Wahrscheinlichkeit (~53%)",
+            "locale": "de",
+            "template": "documented-authored-c773a4ed386a81445a82"
+          },
+          "note": {
+            "text": "Doppler-Ultraschall; bei negativem Befund den Ultraschall wiederholen oder einen Ultraschall der gesamten Extremität durchführen.",
+            "locale": "de",
+            "template": "documented-authored-7ee5ab426e679531e3a2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Nenhum item: 0 ponto, probabilidade baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP improbabile; probabilità bassa (prevalenza ~5%)",
+            "locale": "it",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "Dosare il D-dimero: se negativo, TVP esclusa; se positivo, ecografia Doppler.",
+            "locale": "it",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer e diagnóstico alternativo: −1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP improbabile; probabilità bassa (prevalenza ~5%)",
+            "locale": "it",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "Dosare il D-dimero: se negativo, TVP esclusa; se positivo, ecografia Doppler.",
+            "locale": "it",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só edema com cacifo: 1 ponto, improvável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP improbabile; probabilità moderata nel modello a 3 livelli (~17%)",
+            "locale": "it",
+            "template": "documented-authored-5620c44c652484e8c249"
+          },
+          "note": {
+            "text": "Dosare il D-dimero: se negativo, TVP esclusa; se positivo, ecografia Doppler.",
+            "locale": "it",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema de todo o membro e panturrilha &gt; 3 cm: 2, provável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP probabile (≥ 2); probabilità moderata nel modello a 3 livelli (~17%)",
+            "locale": "it",
+            "template": "documented-authored-e3bc38029a55899cec47"
+          },
+          "note": {
+            "text": "Ecografia Doppler; se negativa, D-dimero o ripetere l’ecografia in 1 settimana.",
+            "locale": "it",
+            "template": "documented-authored-b802e79e2b564b8d3668"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer, acamado, cacifo e dor no trajeto: 4, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "TVP probabile; probabilità alta (~53%)",
+            "locale": "it",
+            "template": "documented-authored-c773a4ed386a81445a82"
+          },
+          "note": {
+            "text": "Ecografia Doppler; se negativa, ripetere l’ecografia o eseguire un’ecografia dell’intero arto.",
+            "locale": "it",
+            "template": "documented-authored-7ee5ab426e679531e3a2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Nenhum item: 0 ponto, probabilidade baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الخثار الوريدي العميق غير مرجح؛ احتمال منخفض (الانتشار ~5%)",
+            "locale": "ar",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "قياس D-dimero: إذا كانت النتيجة سلبية فاستبعاد الخثار الوريدي العميق؛ وإذا كانت إيجابية فإجراء التصوير بالموجات فوق الصوتية مع دوبلر.",
+            "locale": "ar",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer e diagnóstico alternativo: −1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الخثار الوريدي العميق غير مرجح؛ احتمال منخفض (الانتشار ~5%)",
+            "locale": "ar",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "قياس D-dimero: إذا كانت النتيجة سلبية فاستبعاد الخثار الوريدي العميق؛ وإذا كانت إيجابية فإجراء التصوير بالموجات فوق الصوتية مع دوبلر.",
+            "locale": "ar",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só edema com cacifo: 1 ponto, improvável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الخثار الوريدي العميق غير مرجح؛ احتمال متوسط في نموذج المستويات الثلاثة (~17%)",
+            "locale": "ar",
+            "template": "documented-authored-5620c44c652484e8c249"
+          },
+          "note": {
+            "text": "قياس D-dimero: إذا كانت النتيجة سلبية فاستبعاد الخثار الوريدي العميق؛ وإذا كانت إيجابية فإجراء التصوير بالموجات فوق الصوتية مع دوبلر.",
+            "locale": "ar",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema de todo o membro e panturrilha &gt; 3 cm: 2, provável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الخثار الوريدي العميق مرجح (≥ 2)؛ احتمال متوسط في نموذج المستويات الثلاثة (~17%)",
+            "locale": "ar",
+            "template": "documented-authored-e3bc38029a55899cec47"
+          },
+          "note": {
+            "text": "تصوير بالموجات فوق الصوتية دوبلر؛ إذا كانت النتيجة سلبية، فحص D-dimer أو تكرار التصوير بالموجات فوق الصوتية خلال 1 أسبوع.",
+            "locale": "ar",
+            "template": "documented-authored-b802e79e2b564b8d3668"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer, acamado, cacifo e dor no trajeto: 4, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الخثار الوريدي العميق مرجح؛ احتمال مرتفع (~53%)",
+            "locale": "ar",
+            "template": "documented-authored-c773a4ed386a81445a82"
+          },
+          "note": {
+            "text": "تصوير بالموجات فوق الصوتية دوبلر؛ إذا كانت النتيجة سلبية، فكرر التصوير بالموجات فوق الصوتية أو أجرِ تصويرًا بالموجات فوق الصوتية للطرف بالكامل.",
+            "locale": "ar",
+            "template": "documented-authored-7ee5ab426e679531e3a2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Nenhum item: 0 ponto, probabilidade baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVT 不太可能；低概率（患病率 ~5%）",
+            "locale": "zh",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "检测 D-二聚体：若为阴性，排除 DVT；若为阳性，行多普勒超声。",
+            "locale": "zh",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer e diagnóstico alternativo: −1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVT 不太可能；低概率（患病率 ~5%）",
+            "locale": "zh",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "检测 D-二聚体：若为阴性，排除 DVT；若为阳性，行多普勒超声。",
+            "locale": "zh",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só edema com cacifo: 1 ponto, improvável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVT不太可能；3级模型中为中等概率（~17%）",
+            "locale": "zh",
+            "template": "documented-authored-5620c44c652484e8c249"
+          },
+          "note": {
+            "text": "检测 D-二聚体：若为阴性，排除 DVT；若为阳性，行多普勒超声。",
+            "locale": "zh",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema de todo o membro e panturrilha &gt; 3 cm: 2, provável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVT可能（≥ 2）；3级模型中为中等概率（~17%）",
+            "locale": "zh",
+            "template": "documented-authored-e3bc38029a55899cec47"
+          },
+          "note": {
+            "text": "多普勒超声；如果为阴性，则检测D-二聚体或在1周后重复超声检查。",
+            "locale": "zh",
+            "template": "documented-authored-b802e79e2b564b8d3668"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer, acamado, cacifo e dor no trajeto: 4, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVT可能；高概率（~53%）",
+            "locale": "zh",
+            "template": "documented-authored-c773a4ed386a81445a82"
+          },
+          "note": {
+            "text": "多普勒超声；如果为阴性，则重复超声检查或对整个肢体进行超声检查。",
+            "locale": "zh",
+            "template": "documented-authored-7ee5ab426e679531e3a2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Nenhum item: 0 ponto, probabilidade baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVTは考えにくい；低確率（有病率 ~5%）",
+            "locale": "ja",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "Dダイマーを測定する：陰性ならDVTは除外、陽性ならドプラ超音波。",
+            "locale": "ja",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer e diagnóstico alternativo: −1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVTは考えにくい；低確率（有病率 ~5%）",
+            "locale": "ja",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "Dダイマーを測定する：陰性ならDVTは除外、陽性ならドプラ超音波。",
+            "locale": "ja",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só edema com cacifo: 1 ponto, improvável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVTは考えにくい；3段階モデルでは中等度の確率（~17%）",
+            "locale": "ja",
+            "template": "documented-authored-5620c44c652484e8c249"
+          },
+          "note": {
+            "text": "Dダイマーを測定する：陰性ならDVTは除外、陽性ならドプラ超音波。",
+            "locale": "ja",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema de todo o membro e panturrilha &gt; 3 cm: 2, provável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVTが考えられる（≥ 2）；3段階モデルでは中等度の確率（~17%）",
+            "locale": "ja",
+            "template": "documented-authored-e3bc38029a55899cec47"
+          },
+          "note": {
+            "text": "ドプラー超音波；陰性なら、Dダイマーまたは1週間後に超音波を再検査。",
+            "locale": "ja",
+            "template": "documented-authored-b802e79e2b564b8d3668"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer, acamado, cacifo e dor no trajeto: 4, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVTが考えられる；高い確率（~53%）",
+            "locale": "ja",
+            "template": "documented-authored-c773a4ed386a81445a82"
+          },
+          "note": {
+            "text": "ドプラー超音波；陰性なら、超音波を再検査するか、四肢全体の超音波検査を行う。",
+            "locale": "ja",
+            "template": "documented-authored-7ee5ab426e679531e3a2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Nenhum item: 0 ponto, probabilidade baixa",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVT असंभाव्य; कम संभावना (प्रचलन ~5%)",
+            "locale": "hi",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "D-dimer मापें: यदि नकारात्मक हो, तो DVT को बाहर करें; यदि सकारात्मक हो, तो डॉपलर अल्ट्रासाउंड करें।",
+            "locale": "hi",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer e diagnóstico alternativo: −1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVT असंभाव्य; कम संभावना (प्रचलन ~5%)",
+            "locale": "hi",
+            "template": "documented-authored-289ec7754d73ddb9b79b"
+          },
+          "note": {
+            "text": "D-dimer मापें: यदि नकारात्मक हो, तो DVT को बाहर करें; यदि सकारात्मक हो, तो डॉपलर अल्ट्रासाउंड करें।",
+            "locale": "hi",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Só edema com cacifo: 1 ponto, improvável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVT असंभावित; 3-स्तरीय मॉडल में मध्यम संभावना (~17%)",
+            "locale": "hi",
+            "template": "documented-authored-5620c44c652484e8c249"
+          },
+          "note": {
+            "text": "D-dimer मापें: यदि नकारात्मक हो, तो DVT को बाहर करें; यदि सकारात्मक हो, तो डॉपलर अल्ट्रासाउंड करें।",
+            "locale": "hi",
+            "template": "documented-authored-f2a1f5c5fac094343059"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Edema de todo o membro e panturrilha &gt; 3 cm: 2, provável",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVT संभावित (≥ 2); 3-स्तरीय मॉडल में मध्यम संभावना (~17%)",
+            "locale": "hi",
+            "template": "documented-authored-e3bc38029a55899cec47"
+          },
+          "note": {
+            "text": "डॉप्लर अल्ट्रासाउंड; यदि नकारात्मक हो, तो D-dimer या 1 सप्ताह में अल्ट्रासाउंड दोहराएँ।",
+            "locale": "hi",
+            "template": "documented-authored-b802e79e2b564b8d3668"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer, acamado, cacifo e dor no trajeto: 4, alta",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "DVT संभावित; उच्च संभावना (~53%)",
+            "locale": "hi",
+            "template": "documented-authored-c773a4ed386a81445a82"
+          },
+          "note": {
+            "text": "डॉप्लर अल्ट्रासाउंड; यदि नकारात्मक हो, तो अल्ट्रासाउंड दोहराएँ या पूरे अंग का अल्ट्रासाउंड करें।",
+            "locale": "hi",
+            "template": "documented-authored-7ee5ab426e679531e3a2"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

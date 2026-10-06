@@ -95,3 +95,42 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+TVT unwahrscheinlich; niedrige Wahrscheinlichkeit (Prävalenz ~5%)
+
+D-Dimer bestimmen: bei negativem Ergebnis TVT ausgeschlossen; bei positivem Ergebnis Doppler-Ultraschall.
+
+
+### 2
+
+TVT unwahrscheinlich; niedrige Wahrscheinlichkeit (Prävalenz ~5%)
+
+D-Dimer bestimmen: bei negativem Ergebnis TVT ausgeschlossen; bei positivem Ergebnis Doppler-Ultraschall.
+
+
+### 3
+
+TVT unwahrscheinlich; moderate Wahrscheinlichkeit im 3-Stufen-Modell (~17%)
+
+D-Dimer bestimmen: bei negativem Ergebnis TVT ausgeschlossen; bei positivem Ergebnis Doppler-Ultraschall.
+
+
+### 4
+
+TVT wahrscheinlich (≥ 2); moderate Wahrscheinlichkeit im 3-Stufen-Modell (~17%)
+
+Doppler-Ultraschall; bei negativem Befund D-Dimer oder den Ultraschall in 1 Woche wiederholen.
+
+
+### 5
+
+TVT wahrscheinlich; hohe Wahrscheinlichkeit (~53%)
+
+Doppler-Ultraschall; bei negativem Befund den Ultraschall wiederholen oder einen Ultraschall der gesamten Extremität durchführen.
+

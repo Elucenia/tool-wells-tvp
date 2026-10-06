@@ -95,3 +95,42 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+TVP improbable; probabilidad baja (prevalencia ~5%)
+
+Dosar D-dímero: si es negativo, TVP excluida; si es positivo, ultrasonido con Doppler.
+
+
+### 2
+
+TVP improbable; probabilidad baja (prevalencia ~5%)
+
+Dosar D-dímero: si es negativo, TVP excluida; si es positivo, ultrasonido con Doppler.
+
+
+### 3
+
+TVP poco probable; probabilidad moderada en el modelo de 3 niveles (~17%)
+
+Dosar D-dímero: si es negativo, TVP excluida; si es positivo, ultrasonido con Doppler.
+
+
+### 4
+
+TVP probable (≥ 2); probabilidad moderada en el modelo de 3 niveles (~17%)
+
+Ecografía Doppler; si es negativa, dímero D o repetir la ecografía en 1 semana.
+
+
+### 5
+
+TVP probable; probabilidad alta (~53%)
+
+Ecografía Doppler; si es negativa, repetir la ecografía o hacer una ecografía de todo el miembro.
+

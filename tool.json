@@ -319,7 +319,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Wells DVT 2003, Tabela 1: 9 fatores + alternativa −2; 2 níveis ≥2 / <2; modelo de 3 níveis exibido separadamente, edição ainda não conferida",
-    "implementationVersion": "wells-tvp@native-2026-10-04+53c4ddbb0d9f",
+    "implementationVersion": "wells-tvp@native-2026-10-05+cf7e70071755",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/14507948/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -610,7 +610,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "53c4ddbb0d9fbf0ca88cfa58872c07a5a06d35fd3d73d08c4910228a7bea82b4",
+      "implementationHash": "cf7e700717556bf0433527168dafb4791675bc1360107af639ed3906c6ab0ab2",
       "diagnosticRubricSourceAmendment": {
         "at": "2026-10-04T18:59:19.497Z",
         "scope": "Source-documentation and selected label-only amendment; no engine or integer point code change. Private TOOL labels retain their prior source hash and are explicitly outside this candidate.",
@@ -787,7 +787,35 @@
           }
         ],
         "hash": "68fa11e6741ba1f230a9e2a94395913ef4f23d76d8e0cae9165247910b879fdb"
-      }
+      },
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "wells-tvp@native-2026-10-04+53c4ddbb0d9f",
+          "previousImplementationHash": "53c4ddbb0d9fbf0ca88cfa58872c07a5a06d35fd3d73d08c4910228a7bea82b4",
+          "implementationHash": "cf7e700717556bf0433527168dafb4791675bc1360107af639ed3906c6ab0ab2",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "0078743c76235ddbb633cf61412b340a69a516350e7779bb9984db5af5a0abf9",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A estratégia Wells 2003 foi estudada em pacientes ambulatoriais com suspeita de TVP de membro inferior. A decisão protocolar de dispensar ultrassom exigia probabilidade clínica improvável e D-dímero negativo juntos. O escore isolado não confirma nem exclui TVP, e o ensaio de D-dímero e os critérios de elegibilidade devem corresponder ao protocolo utilizado. Na Tabela 1 de Wells 2003, a diferença da panturrilha é de pelo menos 3 cm, medida 10 cm abaixo da tuberosidade tibial; cirurgia de grande porte nas últimas 12 semanas exige anestesia geral ou regional. A tabela define somente o modelo de 2 níveis (≥2 provável; <2 improvável); a edição do modelo de 3 níveis exibido aqui permanece sem conferência.",
     "sourceLimitEvidence": {
@@ -823,20 +851,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/wells-tvp/calculator.js",
-    "bytes": 5867,
-    "sha256": "53c4ddbb0d9fbf0ca88cfa58872c07a5a06d35fd3d73d08c4910228a7bea82b4"
+    "bytes": 6072,
+    "sha256": "cf7e700717556bf0433527168dafb4791675bc1360107af639ed3906c6ab0ab2"
   },
-  "sourceToolSha256": "5be2f6b34675ec4969453de172d9c62621db944697aa27489805a84d0738fdf1",
+  "sourceToolSha256": "5adfc50cfe8cef2d8d4835fd42258391ce57d6698c3cebb947eee080401b1430",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "f793b1e02d9cf8c0b4beaed5134e930546b58ef625bde75b5c37896f2e6625d0",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "f793b1e02d9cf8c0b4beaed5134e930546b58ef625bde75b5c37896f2e6625d0",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",
